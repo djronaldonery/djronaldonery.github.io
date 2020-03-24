@@ -20,6 +20,25 @@
 			background-color: #999999;
 		}
 	</style>
+	<script type="text/javascript">
+		function sizeOfThings(){
+  			var windowWidth = window.innerWidth;
+  			var windowHeight = window.innerHeight;
+  
+  			var screenWidth = screen.width;
+  			var screenHeight = screen.height;
+  
+ 			document.querySelector('.window-size').innerHTML = windowWidth + 'x' + windowHeight;
+  			document.querySelector('.screen-size').innerHTML = screenWidth + 'x' + screenHeight;
+
+		};
+
+		sizeOfThings();
+
+		window.addEventListener('resize', function(){
+		sizeOfThings();
+		});
+	</script>
 </head>
 <body>
 	<h1>Nery Produções</h1><br><br>
